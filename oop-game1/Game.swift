@@ -23,9 +23,6 @@ class Game {
     
     func startGame () {
         status = Status.playing
-        player1 = Character(startingHP: 80, attackPwr: 15, name: "Orc", characterType: Character.CharacterType.Orc)
-        
-        player2 = Character(startingHP: 120, attackPwr: 10, name: "Leo", characterType: Character.CharacterType.Soldier)
     }
     
     func hit (attackingPlayer: Character, defendingPlayer: Character){
@@ -35,6 +32,5 @@ class Game {
     func gameOver () {
         status = Status.gameOver
     }
-    
     
 }

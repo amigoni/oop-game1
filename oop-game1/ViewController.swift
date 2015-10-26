@@ -24,9 +24,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var restartButton: UIButton!
     @IBOutlet weak var restartLbl: UILabel!
     
+    @IBOutlet weak var introLbl: UILabel!
+    @IBOutlet weak var soldierButton: UIButton!
+    @IBOutlet weak var orcButton: UIButton!
+
+    
     var attackSound: AVAudioPlayer!
     var deathSound: AVAudioPlayer!
     var game: Game!
+    var pickPlayerTurn: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +57,8 @@ class ViewController: UIViewController {
             print(err.debugDescription)
         }
 
-        startGame()
+        //startGame()
+        game = Game()
     }
 
     override func didReceiveMemoryWarning() {
@@ -95,7 +102,43 @@ class ViewController: UIViewController {
     @IBAction func onRestartButtonPressed(sender: AnyObject) {
         startGame()
     }
+    
+    @IBAction func onSoldierButtonPressed(sender: AnyObject) {
+        pickCharacter(Soldier())
+    }
+    
+    @IBAction func onOrcButtonPressed(sender: AnyObject) {
+        pickCharacter(Orc())
+    }
+    
+    func pickCharacter(character: Character){
+        var imageName: String = "player"
+        if character.characterType == Character.CharacterType.Orc {
+            imageName = "enemy"
+        }
+        
+        if pickPlayerTurn == 1 {
+            introLbl.text = "Player 2 - Tap to pick your character"
+            game.player1 = character
+            player1Img.image = UIImage(named: imageName)
+            
+            pickPlayerTurn++
+        }
+        else {
+            game.player2 = character
+            player2Img.image = UIImage(named: imageName)
+            
+            pickPlayerTurn = 1
+            startGame()
+            introLbl.text = "Player 1 - Tap to pick your character"
+        }
+    }
 
+    func togglePickDisplay(hidden: Bool){
+        introLbl.hidden = hidden
+        orcButton.hidden = hidden
+        soldierButton.hidden = hidden
+    }
     
     func gameOverDisplay(){
         game.gameOver()
@@ -105,10 +148,10 @@ class ViewController: UIViewController {
         player2ButtonLbl.hidden = true
         restartButton.hidden = false
         restartLbl.hidden = false
+        togglePickDisplay(false)
     }
     
     func startGame(){
-        game = Game()
         game.startGame()
         restartButton.hidden = true
         restartLbl.hidden = true
@@ -118,19 +161,24 @@ class ViewController: UIViewController {
         player2AttackButton.hidden = false
         player1ButtonLbl.hidden = false
         player2ButtonLbl.hidden = false
+        player1HpLbl.hidden = false
+        player2HpLbl.hidden = false
         player1HpLbl.text = "\(game.player1.hp) HP"
         player2HpLbl.text = "\(game.player2.hp) HP"
         printLbl.text = "Press Button to Attack"
+        togglePickDisplay(true)
     }
     
     
-    func enableButton(button: UIButton){
+    func enableButton(timer: NSTimer){
+        let userInfo = timer.userInfo as! Dictionary<String, AnyObject>
+        let button:UIButton = (userInfo["theButton"] as! UIButton)
         button.enabled = true
     }
     
     func disableButton(button: UIButton){
         button.enabled = false
-        NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "enableButton", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: Selector("enableButton:"), userInfo: ["theButton" : button], repeats: false)
     }
     
 //    func loadSound(var sound: AVAudioPlayer, fileName: String){

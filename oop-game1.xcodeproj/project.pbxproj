@@ -17,6 +17,8 @@
 		A7DE82F81BDD4D96003330D0 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7DE82F71BDD4D96003330D0 /* Minecraft.ttf */; settings = {ASSET_TAGS = (); }; };
 		A7DE82FB1BDD69AC003330D0 /* Death.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7DE82F91BDD69AC003330D0 /* Death.wav */; settings = {ASSET_TAGS = (); }; };
 		A7DE82FC1BDD69AC003330D0 /* Attack.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7DE82FA1BDD69AC003330D0 /* Attack.wav */; settings = {ASSET_TAGS = (); }; };
+		A7DE82FE1BDE661D003330D0 /* Orc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DE82FD1BDE661D003330D0 /* Orc.swift */; settings = {ASSET_TAGS = (); }; };
+		A7DE83001BDE6875003330D0 /* Soldier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DE82FF1BDE6875003330D0 /* Soldier.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		A7DE82F71BDD4D96003330D0 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 		A7DE82F91BDD69AC003330D0 /* Death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Death.wav; sourceTree = "<group>"; };
 		A7DE82FA1BDD69AC003330D0 /* Attack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Attack.wav; sourceTree = "<group>"; };
+		A7DE82FD1BDE661D003330D0 /* Orc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orc.swift; sourceTree = "<group>"; };
+		A7DE82FF1BDE6875003330D0 /* Soldier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Soldier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				A7DE82ED1BDD2279003330D0 /* Info.plist */,
 				A7DE82F31BDD2363003330D0 /* Game.swift */,
 				A7DE82F51BDD2374003330D0 /* Character.swift */,
+				A7DE82FD1BDE661D003330D0 /* Orc.swift */,
+				A7DE82FF1BDE6875003330D0 /* Soldier.swift */,
 			);
 			path = "oop-game1";
 			sourceTree = "<group>";
@@ -155,6 +161,8 @@
 				A7DE82E41BDD2279003330D0 /* ViewController.swift in Sources */,
 				A7DE82F41BDD2363003330D0 /* Game.swift in Sources */,
 				A7DE82E21BDD2279003330D0 /* AppDelegate.swift in Sources */,
+				A7DE82FE1BDE661D003330D0 /* Orc.swift in Sources */,
+				A7DE83001BDE6875003330D0 /* Soldier.swift in Sources */,
 				A7DE82F61BDD2374003330D0 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

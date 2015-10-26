@@ -41,21 +41,21 @@
                                     <constraint firstAttribute="width" constant="342" id="d5X-k5-0lQ"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="zQM-PY-t0f" userLabel="Player2Img">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="zQM-PY-t0f" userLabel="Player2Img">
                                 <rect key="frame" x="438" y="410" width="129" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Cyr-is-v8A"/>
                                     <constraint firstAttribute="height" constant="150" id="tiq-GU-NS4"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="XzN-4X-itj" userLabel="Player1Img">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="XzN-4X-itj" userLabel="Player1Img">
                                 <rect key="frame" x="-27" y="410" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="7Kx-g5-8LV"/>
                                     <constraint firstAttribute="width" constant="200" id="NrR-ku-7jn"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdS-BT-5rV" userLabel="player1AttackButton">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdS-BT-5rV" userLabel="player1AttackButton">
                                 <rect key="frame" x="14" y="341" width="168" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="8Mc-q1-Yre"/>
@@ -88,7 +88,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIa-qL-ofQ" userLabel="player2AttackButton">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIa-qL-ofQ" userLabel="player2AttackButton">
                                 <rect key="frame" x="419" y="341" width="166" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="168" id="cmm-kH-gLk"/>
@@ -99,7 +99,7 @@
                                     <action selector="onPlayer2AttackButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mVt-xd-7j5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIc-74-Vzm" userLabel="player2ButtonLbl">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIc-74-Vzm" userLabel="player2ButtonLbl">
                                 <rect key="frame" x="446" y="354" width="113" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9ja-X2-YlW"/>
@@ -109,7 +109,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100 HP" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzo-t5-hh9" userLabel="player1HpLbl">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100 HP" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzo-t5-hh9" userLabel="player1HpLbl">
                                 <rect key="frame" x="143" y="410" width="70" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Cg7-Ic-cFZ"/>
@@ -117,7 +117,7 @@
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100 HP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2l-8u-Q1b" userLabel="player2HpLbl">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100 HP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2l-8u-Q1b" userLabel="player2HpLbl">
                                 <rect key="frame" x="387" y="410" width="72" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="zrc-ub-exK"/>
@@ -135,7 +135,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id1-Bq-Df6" userLabel="player1ButtonLbl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player 1 - Tap a character to pick it!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhn-uT-3ru" userLabel="introLbl">
+                                <rect key="frame" x="142" y="290" width="316" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Pen-iM-J0x"/>
+                                    <constraint firstAttribute="height" constant="21" id="cIP-LT-gRq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id1-Bq-Df6" userLabel="player1ButtonLbl">
                                 <rect key="frame" x="37" y="357" width="113" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="4kl-MF-B4P"/>
@@ -145,6 +154,28 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPn-Hs-amn">
+                                <rect key="frame" x="315" y="327" width="69" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="79P-tI-75I"/>
+                                    <constraint firstAttribute="width" constant="69" id="Fe8-jH-U1P"/>
+                                </constraints>
+                                <state key="normal" image="player"/>
+                                <connections>
+                                    <action selector="onSoldierButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z8P-BH-Anj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IR-c8-Q5f" userLabel="OrcButton">
+                                <rect key="frame" x="228" y="329" width="50" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="gU4-7r-5as"/>
+                                    <constraint firstAttribute="width" constant="50" id="y33-s4-ubs"/>
+                                </constraints>
+                                <state key="normal" image="enemy"/>
+                                <connections>
+                                    <action selector="onOrcButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHb-EG-eVZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -156,7 +187,9 @@
                             <constraint firstItem="id1-Bq-Df6" firstAttribute="centerX" secondItem="NdS-BT-5rV" secondAttribute="centerX" id="7ug-zk-PBF"/>
                             <constraint firstItem="QOZ-Nm-uG1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CaE-cm-xUI"/>
                             <constraint firstItem="id1-Bq-Df6" firstAttribute="centerY" secondItem="NdS-BT-5rV" secondAttribute="centerY" id="FAf-ED-nQ8"/>
+                            <constraint firstItem="LPn-Hs-amn" firstAttribute="top" secondItem="uhn-uT-3ru" secondAttribute="bottom" constant="18" id="GsG-qi-NNc"/>
                             <constraint firstItem="Hj6-ed-agU" firstAttribute="centerY" secondItem="aip-my-1dM" secondAttribute="centerY" id="JV7-Ce-CDy"/>
+                            <constraint firstItem="4IR-c8-Q5f" firstAttribute="top" secondItem="uhn-uT-3ru" secondAttribute="bottom" constant="18" id="KDb-pC-Ma4"/>
                             <constraint firstItem="XzN-4X-itj" firstAttribute="top" secondItem="NdS-BT-5rV" secondAttribute="bottom" constant="120" id="Lbs-O6-xr8"/>
                             <constraint firstItem="4GM-qe-4rU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O2e-g7-KPu"/>
                             <constraint firstItem="9Nv-LD-uPY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SDa-0s-0Sy"/>
@@ -176,6 +209,8 @@
                             <constraint firstItem="4GM-qe-4rU" firstAttribute="top" secondItem="zQM-PY-t0f" secondAttribute="bottom" id="gpt-bC-4jy"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4GM-qe-4rU" secondAttribute="bottom" id="h4l-Ag-OfF"/>
                             <constraint firstItem="XzN-4X-itj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iFG-8K-Z7u"/>
+                            <constraint firstItem="uhn-uT-3ru" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="j9W-zU-SLw"/>
+                            <constraint firstItem="4IR-c8-Q5f" firstAttribute="leading" secondItem="NdS-BT-5rV" secondAttribute="trailing" constant="20" id="k6r-3y-6bK"/>
                             <constraint firstAttribute="trailing" secondItem="QOZ-Nm-uG1" secondAttribute="trailing" id="kQj-tw-h7U"/>
                             <constraint firstItem="4GM-qe-4rU" firstAttribute="top" secondItem="gIa-qL-ofQ" secondAttribute="bottom" constant="127" id="kQw-Tq-DQq"/>
                             <constraint firstItem="Dzo-t5-hh9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="140" id="lfw-4G-mZQ"/>
@@ -185,8 +220,10 @@
                             <constraint firstItem="gIa-qL-ofQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="peP-gG-dH9"/>
                             <constraint firstAttribute="trailing" secondItem="P2l-8u-Q1b" secondAttribute="trailing" constant="140" id="qxL-q4-2Rn"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aip-my-1dM" secondAttribute="bottom" constant="5" id="tOo-AW-j4o"/>
+                            <constraint firstItem="uhn-uT-3ru" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vSZ-KZ-ozx"/>
                             <constraint firstItem="4GM-qe-4rU" firstAttribute="top" secondItem="Dzo-t5-hh9" secondAttribute="bottom" constant="110" id="xIU-6F-klF"/>
                             <constraint firstItem="hvw-xq-ZBy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yFE-Mj-ugn"/>
+                            <constraint firstItem="gIa-qL-ofQ" firstAttribute="leading" secondItem="LPn-Hs-amn" secondAttribute="trailing" constant="20" id="z1M-Ka-OlY"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -198,6 +235,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="introLbl" destination="uhn-uT-3ru" id="hHS-9N-Ucd"/>
+                        <outlet property="orcButton" destination="4IR-c8-Q5f" id="mJq-Tr-txK"/>
                         <outlet property="player1AttackButton" destination="NdS-BT-5rV" id="xDU-8f-xWp"/>
                         <outlet property="player1ButtonLbl" destination="id1-Bq-Df6" id="cdh-YS-8sF"/>
                         <outlet property="player1HpLbl" destination="Dzo-t5-hh9" id="oK3-tR-Qrb"/>
@@ -209,6 +248,7 @@
                         <outlet property="printLbl" destination="Hj6-ed-agU" id="IDl-P6-Hcj"/>
                         <outlet property="restartButton" destination="hvw-xq-ZBy" id="Jwq-du-2E6"/>
                         <outlet property="restartLbl" destination="9Nv-LD-uPY" id="PyU-35-u2k"/>
+                        <outlet property="soldierButton" destination="LPn-Hs-amn" id="0dI-oH-HUs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
